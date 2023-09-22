@@ -62,15 +62,6 @@ def signp_data(username, password):
     appended_data = pd.concat([d, new_data], ignore_index=True)
     appended_data.to_csv('user_login_data.csv', index=False)
 
-def resize_image(image):
-    # Resize the image to a desired size (e.g., 300x300)
-    size = (224, 224)
-    img = Image.open(image)
-    img.thumbnail(size)
-    return img
-
-
-
 
 
 @app.route('/')
@@ -143,7 +134,6 @@ def process_image():
         return "No file part"
     
     file = request.files['image']
-    file = resize_image(file)
 
     if file.filename == '':
         return "No selected file"
