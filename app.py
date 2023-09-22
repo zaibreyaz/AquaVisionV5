@@ -10,7 +10,8 @@ import pandas as pd
 
 app = Flask(__name__)
 
-global last_uploaded_image_path = None
+global last_uploaded_image_path
+last_uploaded_image_path = None
 
 
 # Set the upload folder and allowed extensions
