@@ -62,6 +62,16 @@ def signp_data(username, password):
     appended_data = pd.concat([d, new_data], ignore_index=True)
     appended_data.to_csv('user_login_data.csv', index=False)
 
+def resize_image(image):
+    # Resize the image to a desired size (e.g., 300x300)
+    size = (224, 224)
+    img = Image.open(image)
+    img.thumbnail(size)
+    return img
+
+
+
+
 
 @app.route('/')
 def index():
@@ -94,7 +104,6 @@ def signup():
             return render_template("index.html")
         return "<h1>Passwords are not same</h1>"
     
-
 
 
 
@@ -132,7 +141,10 @@ def upload_page1():
 def process_image():
     if 'image' not in request.files:
         return "No file part"
+    
     file = request.files['image']
+    file = resize_image(file)
+
     if file.filename == '':
         return "No selected file"
     if file and allowed_file(file.filename):
