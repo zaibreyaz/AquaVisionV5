@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaVision</title>
+    <link rel="stylesheet" href="../static/css/upload.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Aqua<span>Vision</span></h1>
+            <p>Search water footprint</p>
+        </div>
+        <div class="card">
+            <form id="upload-form" action="/process_image" method="POST" enctype="multipart/form-data">
+                <p>Search water footprint by image</p>
+                <img src="../static/img/upload.png" id="upload" for="input-file">
+                <input type="file" accept="image/*" id="input-file" name="image">
+                <button type="submit" id="search" class="btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            </form>
+        </div>
+    </div>
+    <div id="header" hidden></div>
+    <script>
+
+        let upload = document.getElementById("upload");
+        let inputfile = document.getElementById("input-file");
+        let search = document.getElementById("search");
+
+        upload.onclick = function() {
+            inputfile.click();
+        }
+
+        inputfile.onchange = function() {
+            upload.src = URL.createObjectURL(inputfile.files[0]);
+        }
+
+        search.onclick = function() {
+            upload.src = "../static/img/searching.gif";
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#header').load('header.html');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+flask
+flask-Cors
+numpy
+Pillow
+tensorflow
+Jinja2
+pandas
+Pillow
+gdown
+

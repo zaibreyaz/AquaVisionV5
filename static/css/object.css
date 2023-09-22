@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/free-vector/turquoise-ocean-color-sea-waves-with-ripples-background_1017-37269.jpg?size=626&ext=jpg&ga=GA1.2.843810337.1689921852&semt=ais");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 1px 1px #000000;
+}
+
+.text p {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    border-radius: 35px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.detail {
+    flex-basis: 35%;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.recommend {
+    flex-basis: 35%;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.types {
+    margin-top: 15px;
+    flex-basis: 35%;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #d1d1d1;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+.object {
+    flex-basis: 49%;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #d1d1d1;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.content {
+    flex-basis: 49%;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #d1d1d1;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.object-img {
+    width: 350px;
+    height: 226px;
+    border-radius: 15px;
+    border: 1px solid #000000;
+}
+
+.object h1 {
+    padding-bottom: 5px;
+}
+
+.water-content {
+    margin-top: 35px;
+    color: #22668D;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.percentage {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.percentage div {
+    width: 100px;
+}
+
+.percentage div i {
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+.percentage div p {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.highlight {
+    font-weight: 600;
+}
+
+.types p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        height: 100%;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+    .detail {
+        background-color: transparent;
+        flex-direction: column;
+    }
+
+    .recommend {
+        background-color: transparent;
+        flex-direction: column;
+    }
+
+    .types, .object, .content{
+        flex-basis: 100%;
+        border: 1px solid #000000;
+    }
+
+    .container {
+        border-radius: 0;
+        padding: 35px;
+    }
+
+    .text-mid {
+        color: #000000;
+    }
+
+    .object, .content {
+        margin-bottom: 35px;
+    }
+
+    .object-img {
+        max-width: 100%;
+    }
+}

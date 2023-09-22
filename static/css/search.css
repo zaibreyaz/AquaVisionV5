@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262a2f;
+    color: #333;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/turquoise-ocean-color-sea-waves-with-ripples-background_1017-37269.jpg?size=626&ext=jpg&ga=GA1.2.843810337.1689921852&semt=ais");
+    background-size: cover;
+}
+
+.search-box {
+    max-width: 600px;
+    background-color: #fff;
+    margin: 50px auto 0;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+}
+
+input {
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: #333;
+    width: 95%;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+button i {
+    width: 25px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #555;
+}
+
+.result-box ul {
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+
+.result-box li {
+    list-style: none;
+    border-radius: 5px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.result-box li:hover {
+    background-color: #22668D;
+    color: #fff;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    padding-top: 86px;
+}
+
+.text h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 1px 1px #000000;
+}
+
+.text p {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.result-box {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.result-box::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.result-box::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.result-box::-webkit-scrollbar-thumb {
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-box {
+        width: 86%;
+    }
+}

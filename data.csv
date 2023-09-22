@@ -1,0 +1,11 @@
+﻿name,image,water,blue,green,grey,serving_size,recommendation,recommendation_name
+banana,banana.png,80.25,84,12,4,100 grams,0,nan
+apple,apple.png,83.78,16,68,15,100 grams,0,nan
+grapes,grapes.jpg,60,16,70,14,100 grams,0,nan
+toothpaste,toothpaste.jpg,27,30,65,5,1 wash(2 grams),1,dental tablets
+toothbrush,toothbrush.jpg,20,5,90,5,1 piece,1,bamboo toothbrush
+dental tablets,dental_tablets.jpeg,3,10,85,5,1 wash(1 tablet),0,nan
+bamboo toothbrush,bamboo_toothbrush.jpg,5,2,95,3,1 piece,0,nan
+orange,orange.png,56.4,20,71,9,100 grams,0,nan
+watermelon,watermelon.png,23,11,63,26,100 grams,0,nan
+mango,mango.png,180,20,73,7,100 grams,0,nan

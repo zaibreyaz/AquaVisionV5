@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262a2f;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/turquoise-ocean-color-sea-waves-with-ripples-background_1017-37269.jpg?size=626&ext=jpg&ga=GA1.2.843810337.1689921852&semt=ais");
+    background-size: cover;
+    text-align: center;
+}
+
+.container {
+    width: 74%;
+    padding: 30px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #000000;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 1px 1px #000000;
+}
+
+.text p {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.container.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .btn {
+    width: 100%;
+    height: 50px;
+    background-color: #4F709C;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: 600;
+    transition: background 0.5s;
+}
+
+.btn i {
+    padding-right: 5px;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background: #22668D;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.row-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.column {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.container img {
+    width: 210px;
+    height: 210px;
+    padding-bottom: 10px;
+}
+
+label {
+    margin-left: 74%;
+    font-weight: 600;
+}
+
+.dashboard {
+    width: auto;
+    height: auto;
+}
+
+.community-btn {
+    width: 250px;
+    height: 50px;
+    background-color: #4F709C;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.5s;
+}
+
+.community-btn:hover {
+    background: #22668D;
+}
+
+.login {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+}
+
+.login-btn {
+    width: 60px;
+    height: 35px;
+    background-color: #4F709C;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.5s;
+}
+
+.login-btn:hover {
+    background: #22668D;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        height: 100%;
+    }
+
+    .row-main {
+        flex-direction: column;
+    }
+
+    .column {
+        margin-bottom: 35px;
+    }
+
+    .text {
+        padding-top: 50px;
+    }
+
+    .container {
+        width: 310px;
+    }
+
+    label {
+        margin-left: 0;
+    }
+
+    .community-btn {
+        margin: 15px 0;
+        max-width: 86%;
+    }
+
+    .login {
+        right: 15px;
+    }
+}

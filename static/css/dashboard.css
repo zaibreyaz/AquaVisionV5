@@ -1,0 +1,357 @@
+:root {
+    --light: #f6f6f9;
+    --primary: #1976D2;
+    --light-primary: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #363949;
+	--light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.bx {
+    font-size: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.breadcrumb li {
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body.dark {
+    --light: #181a1e;
+    --grey: #25252c;
+    --dark: #fbfbfb
+}
+
+body {
+    background: var(--grey);
+    overflow-x: hidden;
+}
+
+.content main {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/free-vector/turquoise-ocean-color-sea-waves-with-ripples-background_1017-37269.jpg?size=626&ext=jpg&ga=GA1.2.843810337.1689921852&semt=ais");
+    background-size: cover;
+    padding: 20px;
+}
+
+.content main .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 16px;
+    flex-wrap: wrap;
+}
+
+.content main .header .left h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.content main .header .left .breadcrumb {
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.content main .header .left .breadcrumb li {
+    color: var(--dark);
+}
+
+.content main .header .left .breadcrumb li a {
+    color: var(--dark-grey);
+    pointer-events: none;
+}
+
+.content main .header .left .breadcrumb li a.active {
+    color: var(--primary);
+    pointer-events: none;
+}
+
+.content main .header .report {
+    height: 35px;
+    padding: 0 16px;
+    border-radius: 35px;
+    background: var(--primary);
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    font-weight: 500;
+}
+
+.content main .insights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin-top: 35px;
+}
+
+.content main .insights li {
+    padding: 20px;
+    background: var(--light);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.content main .insights li .fa-solid {
+    width: 86px;
+    height: 86px;
+    border-radius: 10px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content main .insights li:nth-child(1) .fa-solid {
+    background: var(--light-primary);
+    color: var(--primary);
+}
+
+.content main .insights li:nth-child(2) .fa-solid {
+    background: var(--light-warning);
+    color: var(--warning);
+}
+
+.content main .insights li:nth-child(3) .fa-solid {
+    background: var(--light-success);
+    color: var(--success);
+}
+
+.content main .insights li:nth-child(4) .fa-solid {
+    background: var(--light-danger);
+    color: var(--danger);
+}
+
+.content main .insights li:nth-child(5) .fa-solid {
+    background: #EAC696;
+    color: #65451F;
+}
+
+.content main .insights li:nth-child(6) .fa-solid {
+    background: #E5CFF7;
+    color: #5B0888;
+}
+
+.content main .insights li .info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.content main .insights li .info p {
+    color: var(--dark);
+    font-size: 14px;
+}
+
+.content main .bottom-data {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+    margin-top: 24px;
+    width: 100%;
+    color: var(--dark);
+}
+
+.content main .bottom-data>div {
+    border-radius: 20px;
+    background: var(--light);
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.content main .bottom-data .header {
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    margin-bottom: 20px;
+}
+
+.content main .bottom-data .header h3 {
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content main .bottom-data .orders {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+.content main .bottom-data .orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content main .bottom-data .orders table th {
+    padding-bottom: 11px;
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--grey);
+}
+
+.content main .bottom-data .orders table td {
+    padding: 16px 0;
+}
+
+.content main .bottom-data .orders table tr td:first-child {
+    display: flex;
+    align-items: center;
+    grid-gap: 14px;
+    padding-left: 0;;
+}
+
+.content main .bottom-data .orders table td img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content main .bottom-data .orders table tbody tr {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content main .bottom-data .orders table tbody tr:hover {
+    background: var(--grey);
+}
+
+.content main .bottom-data .orders table tr td .status {
+    font-size: 10px;
+    padding: 6px 16px;
+    color: var(--light);
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.content main .bottom-data .orders table tr td .status.completed {
+    background: var(--success);
+}
+
+.content main .bottom-data .orders table tr td .status.process {
+    background: var(--primary);
+}
+
+.content main .bottom-data .orders table tr td .status.pending {
+    background: var(--warning);
+}
+
+.content main .bottom-data .reminders {
+    flex-grow: 1;
+    flex-basis: 260px;
+}
+
+.content main .bottom-data .reminders .task-list {
+    width: 100%;
+}
+
+.content main .bottom-data .reminders .task-list li {
+    width: 100%;
+    margin-bottom: 16px;
+    background: var(--grey);
+    padding: 14px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content main .bottom-data .reminders .task-list li .task-title {
+    display: flex;
+    align-items: center;
+}
+
+.task-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.content main .bottom-data .reminders .task-list li .task-title p {
+    margin-left: 1px;
+}
+
+.content main .bottom-data .reminders .task-list li .bx {
+    cursor: pointer;  
+}
+
+.content main .bottom-data .reminders .task-list li.completed {
+    border-left: 10px solid var(--success);
+}
+
+@media screen and (max-width: 600px) {
+    .content main .bottom-data .header {
+        min-width: 300px;
+    }
+
+    .content main .bottom-data .orders table {
+        min-width: 300px;
+    }
+
+    .content main .bottom-data .reminders .task-list {
+        min-width: 300px;
+    }
+
+    .task-list {
+        width: 86%;
+    }
+
+    .completed {
+        width: 90%;
+    }
+
+    .completed b {
+        font-size: 11px;
+    }
+
+    .completed p {
+        font-size: 10px;
+    }
+
+    .orders table {
+        font-size: 10px;
+    }
+
+    .content main .bottom-data .orders table th {
+        font-size: 11px;
+    }
+
+    .content main .bottom-data .reminders .task-list {
+        width: 10%;
+    }
+
+    .breadcrumb li {
+        font-size: 11px;
+    }
+}

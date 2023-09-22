@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaVision</title>
+    <link rel="stylesheet" href="../static/css/object.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="text">
+            <h1>Aqua<span>Vision</span></h1>
+            <p>Search water footprint</p>
+        </div>
+        <div class="container">
+
+
+
+            <h1 class="text-mid">Data based on User Input</h1>
+            <div class="detail">
+                <div class="object">
+                    <h1 id="name">{{result['name']}}</h1>
+                    <img id="image" class="object-img" src="{{result['image']}}">
+                </div>
+                <div class="content">
+                    <h1>Water Footprint</h1>
+
+
+
+                    <p>Serving size: {{result['serving_size']}}</p>
+                    <p id="water" class="water-content">{{result['water']}} liters per serving</p>
+                    <div class="percentage">
+                        <div style="color:#0c8ac5;"><i class="fa-solid fa-droplet"></i> <p id="blue"> {{result['blue']}}% </p></div>
+                        <div style="color:#00a86b;"><i class="fa-solid fa-droplet"></i> <p id="green"> {{result['green']}}% </p></div>
+                        <div style="color:#4b4a4a;"><i class="fa-solid fa-droplet"></i> <p id="grey"> {{result['grey']}}% </p></div>
+                    </div>
+
+
+
+                </div>
+            </div>       
+        
+        
+        
+
+
+
+
+            <div class="types">
+                <p class="highlight">What is water footprint?</p>
+                <p>The water footprint measures the amount of water used to produce each of the goods and services we use. Three types of water footprints are</p>
+                <p><span style="color:#00a86b;" class="highlight">Green water footprint</span> is water from precipitation that is stored in the root zone of the soil and evaporated, transpired or incorporated by plants. It is particularly relevant for agricultural, horticultural and forestry products.</p>
+                <p><span style="color:#0c8ac5;" class="highlight">Blue water footprint</span> is water that has been sourced from surface or groundwater resources and is either evaporated, incorporated into a product or taken from one body of water and returned to another, or returned at a different time. Irrigated agriculture, industry and domestic water use can each have a blue water footprint.</p>
+                <p><span style="color:#4b4a4a;" class="highlight">Grey water footprint</span> is the amount of fresh water required to assimilate pollutants to meet specific water quality standards. The grey water footprint considers point-source pollution discharged to a freshwater resource directly through a pipe or indirectly through runoff or leaching from the soil, impervious surfaces, or other diffuse sources.</p>
+            </div>
+        </div>
+        </div>
+        <div id="header" hidden></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#header').load('header.html');
+        });
+    </script>
+<body>
+</html>
